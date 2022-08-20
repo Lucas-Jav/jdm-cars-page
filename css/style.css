@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.disppear {
+  animation: vanish 2s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.light {
+  color: white;
+}
+
+.txtaling {
+  text-align: justify;
+}
+
+.teste {
+  background-color: rgba(128, 128, 128, 0.342);
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+div.box-load {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url(../img/jd.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+div.box-load div.pre {
+  width: 30vw;
+  height: 40vh;
+  margin-bottom: 60vh;
+  background-image: url("https://i.pinimg.com/originals/48/6a/a0/486aa0fa1658b7522ecd8918908ece40.gif");
+  background-position: center;
+  background-size: contain;
+  animation: load 1s infinite linear;
+  background-repeat: no-repeat;
+}
+
+section.section1 {
+  height: 95vh;
+  background-image: url(../img/gtr32.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.section1 footer {
+  text-align: center;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section.section1 footer p {
+  color: white;
+}
+section.section1 footer p a {
+  color: white;
+}
+@media (max-width: 1024px) {
+  section.section1 {
+    background-image: url(../img/teste.jpg);
+  }
+}
+@media (max-width: 610px) {
+  section.section1 {
+    background-image: url(../img/media2.jpg);
+  }
+}
+section.section1 div.container-fluid div.section1ContentAbout {
+  margin-left: 2%;
+  margin-top: 4%;
+  width: 60%;
+}
+@media (max-width: 1024px) {
+  section.section1 div.container-fluid div.section1ContentAbout {
+    width: 90%;
+  }
+}
+section.section1 div.container-fluid div.section1ContentAbout h1 {
+  color: white;
+}
+@media (max-width: 411px) {
+  section.section1 div.container-fluid div.section1ContentAbout h1 {
+    font-size: 25px;
+  }
+}
+section.section1 div.container-fluid div.section1ContentAbout p.h5 {
+  color: white;
+  opacity: 0.6;
+}
+@media (max-width: 458px) {
+  section.section1 div.container-fluid div.section1ContentAbout p.h5 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 422px) {
+  section.section1 div.container-fluid div.section1ContentAbout p.h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 374px) {
+  section.section1 div.container-fluid div.section1ContentAbout p.h5 {
+    font-size: 14px;
+  }
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta {
+  margin-top: 20px;
+  border: none;
+  background: none;
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta:hover svg {
+  transform: translateX(0);
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta:active svg {
+  transform: scale(0.9);
+}
+section.section1 div.container-fluid div.section1ContentAbout .hover-underline-animation {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+section.section1 div.container-fluid div.section1ContentAbout .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+section.section1 div.container-fluid div.section1ContentAbout .cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+section.section2 {
+  height: 100%;
+  width: 100%;
+}
+section.section2 div.content1 {
+  height: 100%;
+  width: 60%;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+section.section2 div.content1 p {
+  opacity: 0.6;
+}
+@media (max-width: 611px) {
+  section.section2 div.content1 p {
+    font-size: 15px;
+  }
+}
+section.section2 div.content1 .h5 {
+  text-indent: 20px;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+}
+@media (max-width: 1440px) {
+  section.section2 div.content1 {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  section.section2 div.content1 {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  section.section2 div.content1 {
+    width: 100%;
+  }
+}
+section.section2 div.content2 {
+  background-color: rgba(128, 128, 128, 0.11);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+section.section2 div.content2 div.content2Bloco {
+  display: flex;
+  gap: 30px;
+  width: 30%;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  section.section2 div.content2 div.content2Bloco {
+    width: 50%;
+  }
+}
+@media (max-width: 476px) {
+  section.section2 div.content2 div.content2Bloco {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  section.section2 div.content2 div.content2Bloco {
+    width: 90%;
+  }
+}
+section.section2 div.content2 div.content2Bloco figcaption {
+  text-align-last: right;
+}
+section.section2 div.content2 div.content2Bloco img {
+  width: 100%;
+  min-width: 200px;
+}
+section.section2 div.container {
+  margin-top: 20px;
+}
+section.section2 div.container p {
+  opacity: 0.9;
+}
+@media (max-width: 611px) {
+  section.section2 div.container p {
+    font-size: 15px;
+  }
+}
+section.section2 div.container p.h5 {
+  opacity: 0.6;
+  text-indent: 20px;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+}
+section.section2 div.container div.list ul li {
+  text-align: center;
+  max-height: 10vh;
+}
+section.section2 div.container div.list ul li.ativo {
+  background-color: rgba(128, 128, 128, 0.11);
+}
+
+footer.footerSobre p {
+  text-align: center;
+}
+footer.footerSobre p a {
+  color: black;
+}
+
+.card {
+  border-radius: 30px;
+  background: #e0e0e0;
+  /* box-shadow: 15px 15px 30px #bebebe,
+              -15px -15px 30px #ffffff; */
+}
+
+.maintext h1 {
+  font-family: "Mohave", sans-serif;
+}
+
+.sectionNissan div.content1 p.lead {
+  font-size: clamp(0.8rem, 1vw, 2rem);
+}
+.sectionNissan div.content1 p.h5 {
+  opacity: 0.6;
+  text-indent: 20px;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.sectionNissanTitleCars {
+  /* background-color: $colorback; */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+.sectionNissan {
+    div.content1 {
+        p.lead{
+            font-size: clamp(0.8rem, 1vw, 2rem); 
+        }
+        p.h5 {
+            opacity: 0.6;
+            text-indent: 20px;
+            font-size: clamp(1rem, 1.5vw, 2rem); 
+        }
+    }
+}
+.sectionNissanTitleCars {
+        /* background-color: $colorback; */
+        
+    }
