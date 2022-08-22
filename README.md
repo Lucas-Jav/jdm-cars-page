@@ -21,7 +21,7 @@ Projeto de uma pagina ilustrativa explicando a historia dos carros japoneses e o
 
 Pode ser que futuramente coloque mais!
 
-#### A imagem de alguns carros estao erradas?!
+#### A imagem ou videos de alguns carros estao erradas?!
 
 Se acontecer de estarem erradas, me chame pelo linkedin para poder corrigir
 
